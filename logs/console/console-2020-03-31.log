@@ -1,0 +1,79 @@
+false ssl-certs /home/jilongcui/gopath/blockchain-explorer-fsh/ssl-certs
+******* Initialization started for hyperledger fabric platform ******, {
+  'first-network': {
+    name: 'fsh-network',
+    profile: './connection-profile/first-network.json'
+  }
+}
+ client_configs.name  fsh-network  client_configs.profile  ./connection-profile/first-network.json
+FabricUtils.createFabricClient 
+config.client.tlsEnable  true
+FabricConfig, this.config.channels  mychannel
+An identity for the admin user: admin already exists in the wallet
+2020-03-31T01:39:39.214Z - [31merror[39m: [NetworkConfig101.js]: NetworkConfig101 - problem reading the PEM file :: Error: ENOENT: no such file or directory, open '/opt/hyperledger/fabric/fabric-samples/fsh/crypto-config/peerOrganizations/jsqr.fshchain.com/peers/peer0.jsqr.fshchain.com/tls/ca.crt'
+2020-03-31T01:39:39.216Z - [31merror[39m: [NetworkConfig101.js]: NetworkConfig101 - problem reading the PEM file :: Error: ENOENT: no such file or directory, open '/opt/hyperledger/fabric/fabric-samples/fsh/crypto-config/peerOrganizations/jsqr.fshchain.com/peers/peer0.jsqr.fshchain.com/tls/ca.crt'
+
+ ********* call to initializeDetachClient **********
+initializeDetachClient --> client_config  {
+  name: 'fsh-network',
+  profile: './connection-profile/first-network.json'
+}  name  fsh-network
+initializeDetachClient, network config)  {
+  name: 'first-network',
+  version: '1.0.0',
+  license: 'Apache-2.0',
+  client: {
+    tlsEnable: true,
+    adminUser: 'admin',
+    adminPassword: 'adminpw',
+    enableAuthentication: false,
+    organization: 'JSQR',
+    connection: { timeout: [Object] }
+  },
+  channels: { mychannel: { peers: [Object], connection: [Object] } },
+  organizations: {
+    JSQRMSP: {
+      mspid: 'JSQRMSP',
+      fullpath: true,
+      adminPrivateKey: [Object],
+      signedCert: [Object]
+    }
+  },
+  peers: {
+    'peer0.jsqr.fshchain.com': {
+      tlsCACerts: [Object],
+      url: 'grpcs://localhost:7051',
+      eventUrl: 'grpcs://localhost:7053',
+      grpcOptions: [Object]
+    }
+  }
+}
+
+************************************* initializeDetachClient *************************************************
+Error : Failed to connect client peer, please check the configuration and peer status
+Info :  Explorer will continue working with only DB data
+************************************** initializeDetachClient ************************************************
+
+FabricUtils.createDetachClient 
+<<<<<<<<<<<<<<<<<<<<<<<<<< Explorer Error >>>>>>>>>>>>>>>>>>>>>
+Error: listen EADDRINUSE: address already in use :::7080
+    at Server.setupListenHandle [as _listen2] (net.js:1301:14)
+    at listenInCluster (net.js:1349:12)
+    at Server.listen (net.js:1437:7)
+    at startExplorer (/home/jilongcui/gopath/blockchain-explorer-fsh/main.js:123:9) {
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 7080
+}
+FabricConfig, this.config.channels  mychannel
+2020-03-31T01:39:39.234Z - [31merror[39m: [NetworkConfig101.js]: NetworkConfig101 - problem reading the PEM file :: Error: ENOENT: no such file or directory, open '/opt/hyperledger/fabric/fabric-samples/fsh/crypto-config/peerOrganizations/jsqr.fshchain.com/peers/peer0.jsqr.fshchain.com/tls/ca.crt'
+Failed to connect to default peer:  peer0.jsqr.fshchain.com  
+ Error: Peer with name "peer0.jsqr.fshchain.com" not assigned to this channel
+    at Channel.getPeer (/home/jilongcui/gopath/blockchain-explorer-fsh/node_modules/fabric-network/node_modules/fabric-client/lib/Channel.js:828:10)
+    at FabricClient.initializeDetachClient (/home/jilongcui/gopath/blockchain-explorer-fsh/app/platform/fabric/FabricClient.js:258:16)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+Received kill signal, shutting down gracefully
+<<<<<<<<<<<<<<<<<<<<<<<<<< Closing explorer  >>>>>>>>>>>>>>>>>>>>>
+Closed out connections

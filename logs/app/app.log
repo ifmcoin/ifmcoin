@@ -1,0 +1,28 @@
+[2020-03-31 09:39:38.682] [DEBUG] Platform - ******* Initialization started for hyperledger fabric platform ******
+[2020-03-31 09:39:38.683] [DEBUG] Platform - Setting admin organization enrolment files
+[2020-03-31 09:39:38.684] [DEBUG] Platform - Creating client [{
+  name: 'fsh-network',
+  profile: './connection-profile/first-network.json'
+}] >>  fsh-network
+[2020-03-31 09:39:38.684] [DEBUG] FabricUtils - ************ Initializing fabric client for [fsh-network]************
+[2020-03-31 09:39:38.684] [DEBUG] FabricClient - Client configuration [fsh-network]  ...  this.client_config  {
+  name: 'fsh-network',
+  profile: './connection-profile/first-network.json'
+}
+[2020-03-31 09:39:38.687] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2020-03-31 09:39:38.687] [DEBUG] FabricGateway - 
+LOADING CONFIGURATION  [OBJECT OBJECT] 
+
+[2020-03-31 09:39:38.687] [INFO] FabricGateway - peer0.jsqr.fshchain.com
+[2020-03-31 09:39:38.687] [INFO] FabricGateway - peer0.jsqr.fshchain.com
+[2020-03-31 09:39:38.687] [INFO] FabricGateway - /opt/hyperledger/fabric/fabric-samples/fsh/crypto-config/peerOrganizations/jsqr.fshchain.com/users/Admin@jsqr.fshchain.com/msp/signcerts/Admin@jsqr.fshchain.com-cert.pem  
+adminPrivateKeyPath  /opt/hyperledger/fabric/fabric-samples/fsh/crypto-config/peerOrganizations/jsqr.fshchain.com/users/Admin@jsqr.fshchain.com/msp/keystore/01b854a1b90ee890fbdde2d1cad7d5b14be72df736ae6ae0231515dcab9366dd_sk
+[2020-03-31 09:39:38.687] [INFO] FabricGateway - /opt/hyperledger/fabric/fabric-samples/fsh/crypto-config/peerOrganizations/jsqr.fshchain.com/users/Admin@jsqr.fshchain.com/msp/signcerts/Admin@jsqr.fshchain.com-cert.pem  
+adminPrivateKeyPath  /opt/hyperledger/fabric/fabric-samples/fsh/crypto-config/peerOrganizations/jsqr.fshchain.com/users/Admin@jsqr.fshchain.com/msp/keystore/01b854a1b90ee890fbdde2d1cad7d5b14be72df736ae6ae0231515dcab9366dd_sk
+[2020-03-31 09:39:39.215] [ERROR] FabricClient - { inspect: [Function: inspect] }
+[2020-03-31 09:39:39.215] [DEBUG] FabricClient - this.defaultPeer  peer0.jsqr.fshchain.com
+[2020-03-31 09:39:39.216] [ERROR] FabricClient - { inspect: [Function: inspect] }
+[2020-03-31 09:39:39.224] [INFO] main - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2020-03-31 09:39:39.234] [ERROR] FabricClient - Failed to get channel from client  { inspect: [Function: inspect] }

@@ -1,0 +1,8 @@
+[2020-03-31 09:39:34.897] [INFO] PgService - SSL to Postgresql disabled
+[2020-03-31 09:39:34.898] [INFO] PgService - connecting to Postgresql postgres://hppoc:******@localhost:5432/fabricexplorer
+[2020-03-31 09:39:34.899] [INFO] PgService - Please set logger.setLevel to DEBUG in ./app/helper.js to log the debugging.
+[2020-03-31 09:39:39.232] [DEBUG] PgService -  the getRowsBySQlNoCondition  select c.id as id,c.name as channelName,c.blocks as blocks ,c.channel_genesis_hash as channel_genesis_hash,c.trans as transactions,c.createdt as createdat,c.channel_hash as channel_hash from channel c,
+        peer_ref_channel pc where c.channel_genesis_hash = pc.channelid and pc.peerid='peer0.jsqr.fshchain.com' group by c.id ,c.name ,c.blocks  ,c.trans ,c.createdt ,c.channel_hash,c.channel_genesis_hash order by c.name 
+[2020-03-31 09:39:39.233] [DEBUG] PgService -  the getRowsBySQlNoCondition select channel.name as channelName,c.requests as requests,c.channel_genesis_hash as channel_genesis_hash ,
+    c.server_hostname as server_hostname, c.mspid as mspid, c.peer_type as peer_type  from peer as c inner join  channel on
+    c.channel_genesis_hash=channel.channel_genesis_hash where c.channel_genesis_hash='0f74a9a829b237460e34a16b5132c14b507e13d48b94505c0558ff9e38e30aae'
